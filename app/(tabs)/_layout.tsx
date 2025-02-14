@@ -34,21 +34,22 @@ export default function TabLayout() {
           default: {},
         }),
       }}>
-      <Tabs.Screen
+        <Tabs.Screen
         name="index"
+        options={{
+          title: 'Read QR',
+          tabBarIcon: ({ color }) => <TabBarIcon name="qrcode" color={color} />,
+        }}
+      />
+      <Tabs.Screen
+        name="configure"
         options={{
           title: 'Configure',
           tabBarIcon: ({ color }) => <TabBarIcon name="sliders" color={color} />,
   
         }}
       />
-      <Tabs.Screen
-        name="readQR"
-        options={{
-          title: 'Read QR',
-          tabBarIcon: ({ color }) => <TabBarIcon name="qrcode" color={color} />,
-        }}
-      />
+      
 {/*     <Tabs.Screen
     name="contest"
     options={{
