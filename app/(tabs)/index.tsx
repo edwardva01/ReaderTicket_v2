@@ -142,7 +142,7 @@ setUuid(uuidTmp);
    // alert(`Bar code with type ${type} and data ${data} has been scanned!`);
     //verificarEntrada(data)
    // setConfirmed(true);
-   setEntrada("53576")
+   setEntrada(data)
    console.log("data", data)
     //obtenerEntrada(data)
     //onConfirm(data)
